@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ReadMoreTextView</string>
+    <string name="moreText">…more</string>
+    <string name="lessText">…less</string>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SampleActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <com.lmy.readmore_textview.ReadMoreTextView
+        android:id="@+id/tv_sample1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="16dp"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        app:suffixMoreText="@string/moreText"
+        app:suffixLessText="@string/lessText"
+        app:textColor="@color/purple_200"
+        app:suffixTextStyle="bold"
+        app:isUnderLine="false"
+        app:collapsedMaxLine="2"
+        app:isCollapsed="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideLine"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.lmy.readmore_textview.ReadMoreTextView
+        android:id="@+id/tv_sample2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="16dp"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        app:suffixMoreText="@string/moreText"
+        app:suffixLessText="@string/lessText"
+        app:textColor="@color/black"
+        app:suffixTextStyle="italic"
+        app:isUnderLine="true"
+        app:collapsedMaxLine="2"
+        app:isCollapsed="true"
+        app:layout_constraintStart_toEndOf="@id/guideLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
